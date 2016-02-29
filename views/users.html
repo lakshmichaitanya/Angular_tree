@@ -1,0 +1,10 @@
+<ul>
+	<li ng-repeat="item in items" ng-click="showFolders(item)">
+		<span>{{item.folder}}</span>
+			<ul>
+				<li ng-repeat="subItem in item.subfol" ng-show="item.active">
+					<span>{{subItem.subfol}}</span>
+				</li>
+			</ul>
+	</li>
+</ul>
